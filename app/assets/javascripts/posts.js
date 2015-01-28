@@ -1,4 +1,4 @@
-$(document).ready(function () {
+var onReady = function () {
 	$('span.glyphicon.like-icon').on('click', function (e) {
 	  var currentElement = this;
 	  $.ajax({
@@ -19,4 +19,7 @@ $(document).ready(function () {
 		}, 1000);
 	  });
 	});	
-});
+};
+
+$(document).ready(onReady);
+$(document).on('page:load', onReady);
