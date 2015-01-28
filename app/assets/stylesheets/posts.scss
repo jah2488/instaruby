@@ -1,0 +1,36 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.post {
+	$bg-color: #938172;
+	font-family: Helvetica;
+	background: $bg-color;
+	color: white;	
+	img {
+		width: 250px;
+		height: auto;
+		border: 2px solid white;
+		border-radius: 10px;
+		box-shadow: 1px 1px 2px #333;
+	}
+	p {
+		background: lighten($bg-color, 20%);
+		padding: 10px;
+		font-size: 14px;
+	}
+	.likes {
+		display: inline-block;
+		background: #626266;
+		border-radius: 30px;
+		width: 30px;
+		margin: 1px;
+		padding-left: 11px;
+		box-shadow: 0px 0px 2px #FAFAFA;
+
+		.like-icon {
+			position: relative;
+			left: -4px;
+		}
+	}
+}
